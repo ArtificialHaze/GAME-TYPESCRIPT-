@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.1/css/bootstrap.min.css"
+      integrity="sha512-siwe/oXMhSjGCwLn+scraPOWrJxHlUgMBMZXdPe2Tnk3I0x3ESCoLz7WZ5NTH6SZrywMY+PB1cjyqJ5jAluCOg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    /> -->
+    <title>React-Typescript Page</title>
+    <style>
+      :root {
+        --width: 1000px;
+        --height: 650px;
+      }
+
+      #main {
+        position: relative;
+        width: 1000px;
+        margin: 0 auto;
+        width: var(--width);
+        height: var(--height);
+        font-size: 32px;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      canvas {
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 10;
+        border-top: 1px solid grey;
+        border-left: 1px solid grey;
+        border-right: 1px solid grey;
+        margin-bottom: 40px;
+      }
+
+      #display {
+        position: absolute;
+        bottom: 0;
+        display: flex;
+        justify-content: space-between;
+        width: var(--width);
+      }
+
+      #score,
+      #info {
+        width: 200px;
+      }
+    </style>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+      <div id="main" class="main">
+      <canvas id="playField" width="1000" height="600"></canvas>
+      <img id="background" src="./images/background.png"></img>
+      <div id="display">
+        <div id="score"></div>
+        <button id="start">Start</button>
+        <div id="info">Press play!</div>
+      </div>
+    </div>
+  </body>
+</html>
